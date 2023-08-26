@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box">
+        <a class="button" href="#modal">Click Me</a>
+    </div>
+
+    <div id="modal" class="modal-dialog">
+        <div class="content">
+            <div class="modal-header">
+                <a class="close" href="#">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="grid">
+                    <div onclick="openPage()" class="grid-item">
+                        <div class="shadow">
+                            <img src="images/premium.png" alt="">
+                            <h3>Pro</h3>
+                        </div>
+                    </div>
+                    <div onclick="openPage()" class="grid-item">
+                        <div class="shadow">
+                            <img src="images/favourites.png" alt="">
+                            <h3>Free</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openPage() {
+            window.location.href = "https://baby-tube.com/";
+        }
+    </script>
+</body>
+
+</html>
